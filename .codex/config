@@ -1,0 +1,3 @@
+[mcp_servers.graphify]
+command = "home/gofius/.local/bin/graphify-mcp"
+args = ["/home/gofius/DOwnloads/ABP/ConferenceRoomBooking/graphify-out/graph.json"]

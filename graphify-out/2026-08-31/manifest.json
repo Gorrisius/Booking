@@ -1,0 +1,302 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1788089543.9854245,
+    "seen": 1788091861.7682126,
+    "ast_hash": "dbe039a15c5c2eb60e34dccc1af0cbb5",
+    "semantic_hash": "dbe039a15c5c2eb60e34dccc1af0cbb5"
+  },
+  ".codex/hooks.json": {
+    "mtime": 1788091123.7511725,
+    "seen": 1788091861.7682207,
+    "ast_hash": "005ac71c84af2cae38e255e2b9de2411",
+    "semantic_hash": "005ac71c84af2cae38e255e2b9de2411"
+  },
+  "ConferenceRoomBooking.csproj": {
+    "mtime": 1788160010.1547935,
+    "seen": 1788160193.910367,
+    "ast_hash": "de01d35b6f98eb03d8703648028adc28",
+    "semantic_hash": ""
+  },
+  "Methods.cs": {
+    "mtime": 1788161233.795069,
+    "seen": 1788161355.413979,
+    "ast_hash": "2ea9f13ec3d27b45f369a33c4dfab329",
+    "semantic_hash": ""
+  },
+  "Models/Room.cs": {
+    "mtime": 1788161233.5540648,
+    "seen": 1788161355.4139826,
+    "ast_hash": "c02ddfbd6b8623905f60810469ea8a6a",
+    "semantic_hash": ""
+  },
+  "Program.cs": {
+    "mtime": 1788161233.100057,
+    "seen": 1788161355.4139843,
+    "ast_hash": "fae4934cd4c4444b05c64a76b209aaf2",
+    "semantic_hash": ""
+  },
+  "Properties/launchSettings.json": {
+    "mtime": 1788087835.703633,
+    "seen": 1788091861.7682314,
+    "ast_hash": "e274a9b1779996123fb810f74e28656b",
+    "semantic_hash": "e274a9b1779996123fb810f74e28656b"
+  },
+  "appsettings.Development.json": {
+    "mtime": 1788087835.697633,
+    "seen": 1788091861.7682328,
+    "ast_hash": "477a525a47fc9bdbbf94690e6633d843",
+    "semantic_hash": "477a525a47fc9bdbbf94690e6633d843"
+  },
+  "appsettings.json": {
+    "mtime": 1788161233.327061,
+    "seen": 1788161355.4140878,
+    "ast_hash": "cea20ea7d7783e7be8cb0c0aa4f379c1",
+    "semantic_hash": ""
+  },
+  "bin/Debug/net10.0/ConferenceRoomBooking.deps.json": {
+    "mtime": 1788161249.704349,
+    "seen": 1788161355.4140902,
+    "ast_hash": "d7092fa55699c26f9225d30b3a00d0c6",
+    "semantic_hash": ""
+  },
+  "bin/Debug/net10.0/ConferenceRoomBooking.runtimeconfig.json": {
+    "mtime": 1788161249.77535,
+    "seen": 1788161355.4140923,
+    "ast_hash": "e1a2cb8f102273bd3e69e1804fffd48c",
+    "semantic_hash": ""
+  },
+  "bin/Debug/net10.0/ConferenceRoomBooking.staticwebassets.endpoints.json": {
+    "mtime": 1788087949.029976,
+    "seen": 1788091861.7682388,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "bin/Debug/net10.0/appsettings.Development.json": {
+    "mtime": 1788087835.697633,
+    "seen": 1788091861.7682402,
+    "ast_hash": "477a525a47fc9bdbbf94690e6633d843",
+    "semantic_hash": "477a525a47fc9bdbbf94690e6633d843"
+  },
+  "bin/Debug/net10.0/appsettings.json": {
+    "mtime": 1788161233.327061,
+    "seen": 1788161355.4142306,
+    "ast_hash": "cea20ea7d7783e7be8cb0c0aa4f379c1",
+    "semantic_hash": ""
+  },
+  "obj/ConferenceRoomBooking.csproj.nuget.dgspec.json": {
+    "mtime": 1788160013.795365,
+    "seen": 1788160193.910935,
+    "ast_hash": "50d3ed7639d5d1de0c3b4581e074c77d",
+    "semantic_hash": ""
+  },
+  "obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs": {
+    "mtime": 1788087943.7898998,
+    "seen": 1788091861.768244,
+    "ast_hash": "27b0818ca661f08691d52b53159889a6",
+    "semantic_hash": "27b0818ca661f08691d52b53159889a6"
+  },
+  "obj/Debug/net10.0/ConferenceRoomBooking.AssemblyInfo.cs": {
+    "mtime": 1788087943.8500097,
+    "seen": 1788091861.7682452,
+    "ast_hash": "cb7291f7c365338a0297e7c71606d70b",
+    "semantic_hash": "cb7291f7c365338a0297e7c71606d70b"
+  },
+  "obj/Debug/net10.0/ConferenceRoomBooking.GlobalUsings.g.cs": {
+    "mtime": 1788087943.325858,
+    "seen": 1788091861.7682464,
+    "ast_hash": "3ca3ba71f186b61cb901145d168ce1fd",
+    "semantic_hash": "3ca3ba71f186b61cb901145d168ce1fd"
+  },
+  "obj/Debug/net10.0/ConferenceRoomBooking.MvcApplicationPartsAssemblyInfo.cs": {
+    "mtime": 1788161186.426236,
+    "seen": 1788161355.4145043,
+    "ast_hash": "bbddc63dfa9d9faa474fcaa2e2be30af",
+    "semantic_hash": "bbddc63dfa9d9faa474fcaa2e2be30af"
+  },
+  "obj/Debug/net10.0/rjsmcshtml.dswa.cache.json": {
+    "mtime": 1788161249.3383424,
+    "seen": 1788161355.414508,
+    "ast_hash": "f883fbde621d50166fb0f021b593ce4b",
+    "semantic_hash": ""
+  },
+  "obj/Debug/net10.0/rjsmrazor.dswa.cache.json": {
+    "mtime": 1788161249.3332074,
+    "seen": 1788161355.4145122,
+    "ast_hash": "04ff6b5d996dcad61ce0790f1d9315c0",
+    "semantic_hash": ""
+  },
+  "obj/Debug/net10.0/rpswa.dswa.cache.json": {
+    "mtime": 1788161242.8972292,
+    "seen": 1788161355.4145172,
+    "ast_hash": "eb131ea925215d7b62c0383ad1da163f",
+    "semantic_hash": ""
+  },
+  "obj/Debug/net10.0/staticwebassets.build.endpoints.json": {
+    "mtime": 1788087949.029976,
+    "seen": 1788091861.7682533,
+    "ast_hash": "f44ca44dd881261586b84442f2201257",
+    "semantic_hash": "f44ca44dd881261586b84442f2201257"
+  },
+  "obj/Debug/net10.0/staticwebassets.build.json": {
+    "mtime": 1788087949.0241816,
+    "seen": 1788091861.7682548,
+    "ast_hash": "6dabccad953dad2dd15b1633078ce494",
+    "semantic_hash": "6dabccad953dad2dd15b1633078ce494"
+  },
+  "obj/project.assets.json": {
+    "mtime": 1788160010.1673622,
+    "seen": 1788160193.9114542,
+    "ast_hash": "6777a701601c6dd23e77d631c005fb46",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1788089543.9845376,
+    "seen": 1788091861.7682574,
+    "ast_hash": "9b31786b637be3c13978bec4c2330752",
+    "semantic_hash": "9b31786b637be3c13978bec4c2330752"
+  },
+  ".claude/skills/graphify/SKILL.md": {
+    "mtime": 1788089543.984002,
+    "seen": 1788091861.7682586,
+    "ast_hash": "1656a8a8e4a05bbe69f32cd15de81e87",
+    "semantic_hash": "1656a8a8e4a05bbe69f32cd15de81e87"
+  },
+  ".claude/skills/graphify/references/add-watch.md": {
+    "mtime": 1788089326.3401942,
+    "seen": 1788091861.76826,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": "d59d027fe449f06aa03905a01184e779"
+  },
+  ".claude/skills/graphify/references/exports.md": {
+    "mtime": 1788089326.340361,
+    "seen": 1788091861.7682614,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": "9da2a2152e60a22f07f05fed5158f287"
+  },
+  ".claude/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1788089326.3405583,
+    "seen": 1788091861.7682626,
+    "ast_hash": "42fef56a01698118f7fd722acdadea34",
+    "semantic_hash": "42fef56a01698118f7fd722acdadea34"
+  },
+  ".claude/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1788089326.3407168,
+    "seen": 1788091861.7682638,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  ".claude/skills/graphify/references/hooks.md": {
+    "mtime": 1788089326.3408656,
+    "seen": 1788091861.7682652,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  ".claude/skills/graphify/references/query.md": {
+    "mtime": 1788089326.3410952,
+    "seen": 1788091861.7682664,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": "3c46f8ad006874260614ed8657d02307"
+  },
+  ".claude/skills/graphify/references/transcribe.md": {
+    "mtime": 1788089326.3412757,
+    "seen": 1788091861.7682676,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": "67b6a5fa6c0974e18f60db9f8932fbd8"
+  },
+  ".claude/skills/graphify/references/update.md": {
+    "mtime": 1788089326.3414783,
+    "seen": 1788091861.7682688,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": "9378bd03d56baaf78bd738ab3848f142"
+  },
+  ".codex/skills/graphify/SKILL.md": {
+    "mtime": 1788091123.750367,
+    "seen": 1788091861.7682703,
+    "ast_hash": "212b55d95333d84e14262f8ec83faa2b",
+    "semantic_hash": "212b55d95333d84e14262f8ec83faa2b"
+  },
+  ".codex/skills/graphify/references/add-watch.md": {
+    "mtime": 1788089326.3433204,
+    "seen": 1788091861.7682717,
+    "ast_hash": "d59d027fe449f06aa03905a01184e779",
+    "semantic_hash": "d59d027fe449f06aa03905a01184e779"
+  },
+  ".codex/skills/graphify/references/exports.md": {
+    "mtime": 1788089326.3434849,
+    "seen": 1788091861.768273,
+    "ast_hash": "9da2a2152e60a22f07f05fed5158f287",
+    "semantic_hash": "9da2a2152e60a22f07f05fed5158f287"
+  },
+  ".codex/skills/graphify/references/extraction-spec.md": {
+    "mtime": 1788089326.343669,
+    "seen": 1788091861.7682745,
+    "ast_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7",
+    "semantic_hash": "bf895ec4d4e40f5f66f7d31c2a9bd4a7"
+  },
+  ".codex/skills/graphify/references/github-and-merge.md": {
+    "mtime": 1788089326.3438332,
+    "seen": 1788091861.768276,
+    "ast_hash": "cde13df085e4c492aeb7ba298a996d0d",
+    "semantic_hash": "cde13df085e4c492aeb7ba298a996d0d"
+  },
+  ".codex/skills/graphify/references/hooks.md": {
+    "mtime": 1788089326.343982,
+    "seen": 1788091861.7682772,
+    "ast_hash": "3f545db6ce646650bb9de588f5512a27",
+    "semantic_hash": "3f545db6ce646650bb9de588f5512a27"
+  },
+  ".codex/skills/graphify/references/query.md": {
+    "mtime": 1788089326.344215,
+    "seen": 1788091861.7682788,
+    "ast_hash": "3c46f8ad006874260614ed8657d02307",
+    "semantic_hash": "3c46f8ad006874260614ed8657d02307"
+  },
+  ".codex/skills/graphify/references/transcribe.md": {
+    "mtime": 1788089326.3443933,
+    "seen": 1788091861.76828,
+    "ast_hash": "67b6a5fa6c0974e18f60db9f8932fbd8",
+    "semantic_hash": "67b6a5fa6c0974e18f60db9f8932fbd8"
+  },
+  ".codex/skills/graphify/references/update.md": {
+    "mtime": 1788089326.3446193,
+    "seen": 1788091861.7682827,
+    "ast_hash": "9378bd03d56baaf78bd738ab3848f142",
+    "semantic_hash": "9378bd03d56baaf78bd738ab3848f142"
+  },
+  "AGENTS.md": {
+    "mtime": 1788091123.750875,
+    "seen": 1788091861.7682838,
+    "ast_hash": "6a47d64fcc136324ca395065a707ef76",
+    "semantic_hash": "6a47d64fcc136324ca395065a707ef76"
+  },
+  "CLAUDE.md": {
+    "mtime": 1788089543.9846096,
+    "seen": 1788091861.7682855,
+    "ast_hash": "82efb97a359f5c7290bf2513d14686be",
+    "semantic_hash": "82efb97a359f5c7290bf2513d14686be"
+  },
+  "obj/Debug/net10.0/ConferenceRoomBooking.csproj.FileListAbsolute.txt": {
+    "mtime": 1788161249.7948396,
+    "seen": 1788161355.4160578,
+    "ast_hash": "5a9a0cb721abd1643c05051392d56026",
+    "semantic_hash": ""
+  },
+  "BackendTZ.pdf": {
+    "mtime": 1788086932.172137,
+    "seen": 1788091861.768288,
+    "ast_hash": "8d385b0210cc54d1b48833035e1fc728",
+    "semantic_hash": "8d385b0210cc54d1b48833035e1fc728"
+  },
+  "docs/SQLite-Basics.md": {
+    "mtime": 1788124319.1729538,
+    "seen": 1788160193.912721,
+    "ast_hash": "bae3494c58e7de4a2bf40e8694e8045c",
+    "semantic_hash": ""
+  },
+  "Data/DatabaseInitializer.cs": {
+    "mtime": 1788161232.8380523,
+    "seen": 1788161355.4139748,
+    "ast_hash": "61a8434b9ffe560da52559be37db70b9",
+    "semantic_hash": ""
+  }
+}
