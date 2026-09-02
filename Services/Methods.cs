@@ -13,6 +13,7 @@ class Meethods
         using var transaction = connection.BeginTransaction(); 
         using var command = connection.CreateCommand(); 
         command.Transaction = transaction; 
+        //
         command.CommandText = 
         """
         insert into rooms ( Name, Capacity, HourlyRate)
