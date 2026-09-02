@@ -1,21 +1,5 @@
-
-using System.Data;
-using System.Data.Common;
-using System.IO.Pipelines;
-using System.Net.Quic;
-using System.Reflection.Metadata.Ecma335;
-using System.Security.AccessControl;
-using System.Security.Authentication;
-using System.Security.Cryptography.X509Certificates;
-using System.Transactions;
 using ConferenceRoomBooking.Models;
-using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.Data.Sqlite;
-using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
-using Microsoft.Extensions.Options;
-using Microsoft.VisualBasic;
 
 
 class Meethods
@@ -41,7 +25,7 @@ class Meethods
         command.Parameters.AddWithValue("$Hourlyrate", hourlyRate);
         
         int roomId = Convert.ToInt32 (command.ExecuteScalar());
-
+        //
         foreach ( var serviceId in serviceIds)
         {
             using var serviceCommand = connection.CreateCommand();  
@@ -188,6 +172,14 @@ class Meethods
         }
         return rooms.ToArray();
     }
+
+
+
+    //що мені там треба було зробити ? переписати резервацію кімнат і додати таблицю для обраних опцій
+    /*
+        тоді можна почати з початку ай гес, додати таблицю, там просто буде ід кімнати і ід для послуги, в мене вже мала б бути функція для зчитування резервацвії тому візьмемо її
+
+    */
     
     public int ReserveRoom (int id, DateTimeOffset time, int duration, int [] serviceIds ) 
     {
@@ -200,18 +192,41 @@ class Meethods
         using var connection = new SqliteConnection ("Data Source = database/booking.db"); 
         connection.Open(); 
 
+
+
+        // переробити бо вона просто зчитує всі можливості, а мені треба зчитувати те, що ми резервуємо
+
+        foreach ( var serviceId in serviceIds)
+        {
+            using var add = connection.CreateCommand();
+            add.CommandText =
+            """
+            Insert into BookingServices (RoomId, ServiceId)
+            Values ($RoomId, $ServiceId);
+            """;
+            add.Parameters.AddWithValue("$RoomId", id);
+            add.Parameters.AddWithValue("$ServiceId", serviceId);
+            add.ExecuteNonQuery();
+        }
         using var priceCommand = connection.CreateCommand(); 
         priceCommand.CommandText = 
         """ 
-        Select ( (select HourlyRate from Rooms where Id = id) + Coalesce(sum(service.Price), 0)
-        From RoomServices as roomservice
-        inner join service as service
-            on service.Id = roomService.ServiceId 
-        Where roomService.RoomId = $Id)
-        ; 
+        Select (room.HourlyRate * $duration) + Coalesce(
+            Sum(service.Price) , 0)
+            From Rooms as room
+            Left Join BookingServices as bookingService 
+                on bookingService.RoomId = room.Id
+            left join services as service
+                on service.Id = bookingService.ServiceId
+            Where room.Id = $Id
+            Group by room.Id, room.HourlyRate; 
         """; 
-        priceCommand.Parameters.AddWithValue("$Id", id); 
+
+        priceCommand.Parameters.AddWithValue("$Id", id);
+        priceCommand.Parameters.AddWithValue("$duration", duration);
+
         var totalPrice = priceCommand.ExecuteScalar(); 
+
          
         if (totalPrice is null)
         {
@@ -221,14 +236,15 @@ class Meethods
         using var bookingCommand = connection.CreateCommand(); 
         bookingCommand.CommandText = 
         """
-        Isert Into Bookings (
+        Insert Into Bookings (
             RoomId,
             StartAt,
             EndAt,
             TotalPrice
             
         )
-        Values ($Roomid, $StartAt, $endAt, TotalPrice); 
+        Values ($Roomid, $StartAt, $endAt, $TotalPrice) 
+        returning Id;
         """; 
 
         bookingCommand.Parameters.AddWithValue ("$roomId", id); 

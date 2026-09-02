@@ -201,3 +201,4 @@
 /home/gofius/Downloads/ABP/ConferenceRoomBooking/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.52-s2/5de0e1e536bec641848bba47140c92250de1bf61836447b0ab277e86c23e7cf0.json
 /home/gofius/Downloads/ABP/ConferenceRoomBooking/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.52-s2/714545a460cb3c12902e09ea7cb55b5f49f3a4518f66383946e3db6835e41496.json
 /home/gofius/Downloads/ABP/ConferenceRoomBooking/bin/Debug/net10.0/graphify-out/cache/ast/v0.9.52-s2/edef9bfe9d84facea0f43caab468d01c16a5d51c3b64dc71e001b9ec399c245f.json
+/home/gofius/Downloads/ABP/ConferenceRoomBooking/obj/Debug/net10.0/ConferenceRoomBooking.sourcelink.json

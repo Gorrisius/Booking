@@ -8,8 +8,6 @@ CREATE TABLE IF NOT EXISTS Rooms (
     HourlyRate INTEGER NOT NULL CHECK (HourlyRate >= 0)
 );
 
-
-
 CREATE TABLE IF NOT EXISTS Services ( 
     Id integer Primary key Autoincrement,
     name string not null Unique, 
@@ -39,3 +37,13 @@ Create Table if not exists Bookings (
     TotalPrice integer not null, 
     FOREIGN KEY (RoomId) REFERENCES Rooms (Id)
 );
+
+Create table if not exists BookingServices (
+    BookingId integer not null, 
+    ServiceId integer not null,
+
+    primary key (BookingId, ServiceId), 
+
+    Foreign key (BookingId) references Bookings(Id) on delete cascade,
+    Foreign key (ServiceId) references Services(Id) on delete cascade
+)

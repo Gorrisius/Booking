@@ -2,12 +2,12 @@ using Microsoft.Data.Sqlite;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Open the database and run the SQL file once when the application starts.
-using (var connection = new SqliteConnection("Data Source=database/booking.db"))
+// Open the Data and run the SQL file once when the application starts.
+using (var connection = new SqliteConnection("Data Source=Data/booking.db"))
 {
     connection.Open();
 
-    var sql = File.ReadAllText("database/booking.sql");
+    var sql = File.ReadAllText("Data/booking.sql");
     using var command = connection.CreateCommand();
     command.CommandText = sql;
     command.ExecuteNonQuery();
