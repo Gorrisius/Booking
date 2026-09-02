@@ -59,13 +59,13 @@
   },
   "nodes": [
     {
-      "id": "models_room_conferenceroombooking_models_booking",
-      "label": "Booking",
+      "id": "models_room_conferenceroombooking_models_bookingresult",
+      "label": "BookingResult",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
+      "community": 10,
+      "community_name": "BookingResult",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -73,9 +73,47 @@
           "s0"
         ]
       },
-      "norm_label": "booking",
+      "norm_label": "bookingresult",
       "source_file": "Models/Room.cs",
-      "source_location": "L13"
+      "source_location": "L35"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createbookingrequest",
+      "label": "CreateBookingRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "createbookingrequest",
+      "source_file": "Models/Room.cs",
+      "source_location": "L27"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createroomrequest",
+      "label": "CreateRoomRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "createroomrequest",
+      "source_file": "Models/Room.cs",
+      "source_location": "L11"
     },
     {
       "id": "models_room_conferenceroombooking_models_room",
@@ -84,7 +122,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -97,77 +135,211 @@
       "source_location": "L3"
     },
     {
-      "id": "methods_meethods",
-      "label": "Meethods",
+      "id": "models_room_conferenceroombooking_models_roomreport",
+      "label": "RoomReport",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "roomreport",
+      "source_file": "Models/Room.cs",
+      "source_location": "L44"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_editroomrequest",
+      "label": "EditRoomRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "EditRoomRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "editroomrequest",
+      "source_file": "Models/Room.cs",
+      "source_location": "L19"
+    },
+    {
+      "id": "services_methods_methods",
+      "label": "Methods",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
-      "norm_label": "meethods",
-      "source_file": "Methods.cs",
+      "norm_label": "methods",
+      "source_file": "Services/Methods.cs",
       "source_location": "L5"
     },
     {
-      "id": "methods_meethods_editrooms",
-      "label": ".EditRooms()",
+      "id": "services_methods_methods_addroom",
+      "label": ".AddRoom()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
-      "norm_label": ".editrooms()",
-      "source_file": "Methods.cs",
-      "source_location": "L16"
+      "norm_label": ".addroom()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L21"
     },
     {
-      "id": "methods_meethods_findemptyrooms",
+      "id": "services_methods_methods_addroomservices",
+      "label": ".AddRoomServices()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".addroomservices()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L262"
+    },
+    {
+      "id": "services_methods_methods_calculateroomprice",
+      "label": ".CalculateRoomPrice()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".calculateroomprice()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L340"
+    },
+    {
+      "id": "services_methods_methods_checkavailability",
+      "label": ".CheckAvailability()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".checkavailability()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L318"
+    },
+    {
+      "id": "services_methods_methods_deleteroom",
+      "label": ".DeleteRoom()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".deleteroom()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L102"
+    },
+    {
+      "id": "services_methods_methods_editroom",
+      "label": ".EditRoom()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".editroom()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L53"
+    },
+    {
+      "id": "services_methods_methods_findemptyrooms",
       "label": ".FindEmptyRooms()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
       "norm_label": ".findemptyrooms()",
-      "source_file": "Methods.cs",
-      "source_location": "L31"
+      "source_file": "Services/Methods.cs",
+      "source_location": "L112"
     },
     {
-      "id": "methods_meethods_removeroom",
-      "label": ".RemoveRoom()",
+      "id": "services_methods_methods_gethourlyrate",
+      "label": ".GetHourlyRate()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
-      "norm_label": ".removeroom()",
-      "source_file": "Methods.cs",
-      "source_location": "L26"
+      "norm_label": ".gethourlyrate()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L279"
     },
     {
-      "id": "methods_meethods_reserveroom",
+      "id": "services_methods_methods_getroomreport",
+      "label": ".GetRoomReport()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".getroomreport()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L224"
+    },
+    {
+      "id": "services_methods_methods_getserviceprice",
+      "label": ".GetServicePrice()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".getserviceprice()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L295"
+    },
+    {
+      "id": "services_methods_methods_openconnection",
+      "label": ".OpenConnection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": ".openconnection()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L9"
+    },
+    {
+      "id": "services_methods_methods_reserveroom",
       "label": ".ReserveRoom()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
       "norm_label": ".reserveroom()",
-      "source_file": "Methods.cs",
-      "source_location": "L37"
+      "source_file": "Services/Methods.cs",
+      "source_location": "L156"
     },
     {
-      "id": "methods_meethods_roomadd",
-      "label": ".RoomAdd()",
+      "id": "services_methods_methods_todatabasetime",
+      "label": ".ToDatabaseTime()",
       "_callable": true,
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
-      "norm_label": ".roomadd()",
-      "source_file": "Methods.cs",
-      "source_location": "L8"
+      "norm_label": ".todatabasetime()",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L367"
     },
     {
       "id": "properties_launchsettings",
@@ -346,15 +518,168 @@
       "source_location": "L2"
     },
     {
-      "id": "program",
-      "label": "Program.cs",
+      "id": "models_room_conferenceroombooking_models_bookingresult_endat",
+      "label": "EndAt",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Program.cs",
+      "community_name": "BookingResult",
       "file_type": "code",
-      "norm_label": "program.cs",
-      "source_file": "Program.cs",
-      "source_location": "L1"
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "endat",
+      "source_file": "Models/Room.cs",
+      "source_location": "L40"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_bookingresult_id",
+      "label": "Id",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "id",
+      "source_file": "Models/Room.cs",
+      "source_location": "L37"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_bookingresult_roomid",
+      "label": "RoomId",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "roomid",
+      "source_file": "Models/Room.cs",
+      "source_location": "L38"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_bookingresult_startat",
+      "label": "StartAt",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "startat",
+      "source_file": "Models/Room.cs",
+      "source_location": "L39"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_bookingresult_totalprice",
+      "label": "TotalPrice",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "totalprice",
+      "source_file": "Models/Room.cs",
+      "source_location": "L41"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createbookingrequest_duration",
+      "label": "Duration",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "duration",
+      "source_file": "Models/Room.cs",
+      "source_location": "L31"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createbookingrequest_roomid",
+      "label": "RoomId",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "roomid",
+      "source_file": "Models/Room.cs",
+      "source_location": "L29"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createbookingrequest_serviceids",
+      "label": "ServiceIds",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "serviceids",
+      "source_file": "Models/Room.cs",
+      "source_location": "L32"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_createbookingrequest_startat",
+      "label": "StartAt",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "startat",
+      "source_file": "Models/Room.cs",
+      "source_location": "L30"
+    },
+    {
+      "id": "models_room_cs_datetimeoffset",
+      "label": "DateTimeOffset",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "BookingResult",
+      "file_type": "code",
+      "norm_label": "datetimeoffset",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "obj_debug_net10_0_conferenceroombooking_assemblyinfo",
@@ -405,7 +730,7 @@
       "label": "ConferenceRoomBooking.Models",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "kind": "csharp_namespace",
@@ -417,55 +742,22 @@
       "type": "namespace"
     },
     {
-      "id": "datetimeoffset",
-      "label": "DateTimeOffset",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
-      "file_type": "code",
-      "norm_label": "datetimeoffset",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "list",
-      "label": "List",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
-      "file_type": "code",
-      "norm_label": "list",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "methods",
-      "label": "Methods.cs",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
-      "file_type": "code",
-      "norm_label": "methods.cs",
-      "source_file": "Methods.cs",
-      "source_location": "L1"
-    },
-    {
       "id": "models_room",
       "label": "Room.cs",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "norm_label": "room.cs",
       "source_file": "Models/Room.cs",
       "source_location": "L1"
     },
     {
-      "id": "models_room_conferenceroombooking_models_booking_endat",
-      "label": "EndAt",
+      "id": "models_room_conferenceroombooking_models_createroomrequest_capacity",
+      "label": "Capacity",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -473,16 +765,16 @@
           "s0"
         ]
       },
-      "norm_label": "endat",
+      "norm_label": "capacity",
       "source_file": "Models/Room.cs",
-      "source_location": "L18"
+      "source_location": "L14"
     },
     {
-      "id": "models_room_conferenceroombooking_models_booking_id",
-      "label": "Id",
+      "id": "models_room_conferenceroombooking_models_createroomrequest_hourlyrate",
+      "label": "HourlyRate",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -490,33 +782,16 @@
           "s0"
         ]
       },
-      "norm_label": "id",
-      "source_file": "Models/Room.cs",
-      "source_location": "L15"
-    },
-    {
-      "id": "models_room_conferenceroombooking_models_booking_roomid",
-      "label": "RoomId",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "ConferenceRoomBooking.Models",
-        "scope_chain": [
-          "s0"
-        ]
-      },
-      "norm_label": "roomid",
+      "norm_label": "hourlyrate",
       "source_file": "Models/Room.cs",
       "source_location": "L16"
     },
     {
-      "id": "models_room_conferenceroombooking_models_booking_startat",
-      "label": "StartAt",
+      "id": "models_room_conferenceroombooking_models_createroomrequest_name",
+      "label": "Name",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -524,16 +799,16 @@
           "s0"
         ]
       },
-      "norm_label": "startat",
+      "norm_label": "name",
       "source_file": "Models/Room.cs",
-      "source_location": "L17"
+      "source_location": "L13"
     },
     {
-      "id": "models_room_conferenceroombooking_models_booking_totalprice",
-      "label": "TotalPrice",
+      "id": "models_room_conferenceroombooking_models_createroomrequest_serviceids",
+      "label": "ServiceIds",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -541,33 +816,16 @@
           "s0"
         ]
       },
-      "norm_label": "totalprice",
+      "norm_label": "serviceids",
       "source_file": "Models/Room.cs",
-      "source_location": "L19"
-    },
-    {
-      "id": "models_room_conferenceroombooking_models_room_bookings",
-      "label": "Bookings",
-      "_origin": "ast",
-      "community": 22,
-      "community_name": "Room",
-      "file_type": "code",
-      "metadata": {
-        "namespace": "ConferenceRoomBooking.Models",
-        "scope_chain": [
-          "s0"
-        ]
-      },
-      "norm_label": "bookings",
-      "source_file": "Models/Room.cs",
-      "source_location": "L10"
+      "source_location": "L15"
     },
     {
       "id": "models_room_conferenceroombooking_models_room_capacity",
       "label": "Capacity",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -580,11 +838,28 @@
       "source_location": "L7"
     },
     {
+      "id": "models_room_conferenceroombooking_models_room_hourlyrate",
+      "label": "HourlyRate",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "hourlyrate",
+      "source_file": "Models/Room.cs",
+      "source_location": "L8"
+    },
+    {
       "id": "models_room_conferenceroombooking_models_room_id",
       "label": "Id",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -601,7 +876,7 @@
       "label": "Name",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -614,11 +889,11 @@
       "source_location": "L6"
     },
     {
-      "id": "models_room_conferenceroombooking_models_room_options",
-      "label": "Options",
+      "id": "models_room_conferenceroombooking_models_roomreport_bookingcount",
+      "label": "BookingCount",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -626,16 +901,16 @@
           "s0"
         ]
       },
-      "norm_label": "options",
+      "norm_label": "bookingcount",
       "source_file": "Models/Room.cs",
-      "source_location": "L8"
+      "source_location": "L48"
     },
     {
-      "id": "models_room_conferenceroombooking_models_room_value",
-      "label": "Value",
+      "id": "models_room_conferenceroombooking_models_roomreport_revenue",
+      "label": "Revenue",
       "_origin": "ast",
       "community": 22,
-      "community_name": "Room",
+      "community_name": "Room.cs",
       "file_type": "code",
       "metadata": {
         "namespace": "ConferenceRoomBooking.Models",
@@ -643,18 +918,224 @@
           "s0"
         ]
       },
-      "norm_label": "value",
+      "norm_label": "revenue",
       "source_file": "Models/Room.cs",
-      "source_location": "L9"
+      "source_location": "L49"
     },
     {
-      "id": "timeonly",
-      "label": "TimeOnly",
+      "id": "models_room_conferenceroombooking_models_roomreport_roomid",
+      "label": "RoomId",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "roomid",
+      "source_file": "Models/Room.cs",
+      "source_location": "L46"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_roomreport_roomname",
+      "label": "RoomName",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "roomname",
+      "source_file": "Models/Room.cs",
+      "source_location": "L47"
+    },
+    {
+      "id": "program",
+      "label": "Program.cs",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "norm_label": "program.cs",
+      "source_file": "Program.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "services_methods",
+      "label": "Methods.cs",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "Room.cs",
+      "file_type": "code",
+      "norm_label": "methods.cs",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L1"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_editroomrequest_capacity",
+      "label": "Capacity",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "EditRoomRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "capacity",
+      "source_file": "Models/Room.cs",
+      "source_location": "L22"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_editroomrequest_hourlyrate",
+      "label": "HourlyRate",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "EditRoomRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "hourlyrate",
+      "source_file": "Models/Room.cs",
+      "source_location": "L24"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_editroomrequest_name",
+      "label": "Name",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "EditRoomRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "name",
+      "source_file": "Models/Room.cs",
+      "source_location": "L21"
+    },
+    {
+      "id": "models_room_conferenceroombooking_models_editroomrequest_serviceids",
+      "label": "ServiceIds",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "EditRoomRequest",
+      "file_type": "code",
+      "metadata": {
+        "namespace": "ConferenceRoomBooking.Models",
+        "scope_chain": [
+          "s0"
+        ]
+      },
+      "norm_label": "serviceids",
+      "source_file": "Models/Room.cs",
+      "source_location": "L23"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Conference Room Booking",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_api",
+      "label": "API",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Conference Room Booking",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "api",
+      "source_file": "README.md",
+      "source_location": "L14"
+    },
+    {
+      "id": "readme_conference_room_booking",
+      "label": "Conference Room Booking",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Conference Room Booking",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "conference room booking",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_price_calculation",
+      "label": "Price calculation",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Conference Room Booking",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "price calculation",
+      "source_file": "README.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "readme_run",
+      "label": "Run",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "Conference Room Booking",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "run",
+      "source_file": "README.md",
+      "source_location": "L5"
+    },
+    {
+      "id": "services_methods_cs_datetimeoffset",
+      "label": "DateTimeOffset",
       "_origin": "ast",
       "community": 5,
-      "community_name": "Meethods",
+      "community_name": "Methods",
       "file_type": "code",
-      "norm_label": "timeonly",
+      "norm_label": "datetimeoffset",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "sqliteconnection",
+      "label": "SqliteConnection",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": "sqliteconnection",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "sqlitetransaction",
+      "label": "SqliteTransaction",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "Methods",
+      "file_type": "code",
+      "norm_label": "sqlitetransaction",
       "source_file": "",
       "source_location": ""
     },
@@ -1779,20 +2260,248 @@
   ],
   "links": [
     {
-      "source": "methods_meethods_findemptyrooms",
+      "source": "services_methods_methods_addroom",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_addroom",
+      "target": "services_methods_methods_addroomservices",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_checkavailability",
+      "target": "services_methods_methods_todatabasetime",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L331",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_deleteroom",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_editroom",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_editroom",
+      "target": "services_methods_methods_addroomservices",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_findemptyrooms",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_findemptyrooms",
+      "target": "services_methods_methods_todatabasetime",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_findemptyrooms",
       "target": "models_room_conferenceroombooking_models_room",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
-      "source_file": "Methods.cs",
-      "source_location": "L33",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "datetimeoffset",
+      "source": "services_methods_methods_getroomreport",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L231",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_getroomreport",
+      "target": "services_methods_methods_todatabasetime",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L243",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_getroomreport",
+      "target": "models_room_conferenceroombooking_models_roomreport",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L250",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_openconnection",
+      "target": "sqliteconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_openconnection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L170",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_gethourlyrate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L173",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_checkavailability",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_getserviceprice",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L179",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_calculateroomprice",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L182",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_methods_todatabasetime",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L194",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "models_room_conferenceroombooking_models_bookingresult",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_cs_datetimeoffset",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1802,27 +2511,159 @@
         "ref_token": "DateTimeOffset"
       },
       "source_file": "Models/Room.cs",
-      "source_location": "L18",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_room",
-      "target": "list",
+      "source": "models_room_conferenceroombooking_models_createbookingrequest",
+      "target": "models_room_cs_datetimeoffset",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "metadata": {
-        "ref_token": "List"
+        "ref_token": "DateTimeOffset"
       },
       "source_file": "Models/Room.cs",
-      "source_location": "L10",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "models_room_conferenceroombooking_models_booking_id",
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_conferenceroombooking_models_bookingresult_id",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_conferenceroombooking_models_bookingresult_roomid",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_conferenceroombooking_models_bookingresult_startat",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_conferenceroombooking_models_bookingresult_endat",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_bookingresult",
+      "target": "models_room_conferenceroombooking_models_bookingresult_totalprice",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createbookingrequest",
+      "target": "models_room_conferenceroombooking_models_createbookingrequest_roomid",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createbookingrequest",
+      "target": "models_room_conferenceroombooking_models_createbookingrequest_startat",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createbookingrequest",
+      "target": "models_room_conferenceroombooking_models_createbookingrequest_duration",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createbookingrequest",
+      "target": "models_room_conferenceroombooking_models_createbookingrequest_serviceids",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createroomrequest",
+      "target": "models_room_conferenceroombooking_models_createroomrequest_name",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createroomrequest",
+      "target": "models_room_conferenceroombooking_models_createroomrequest_capacity",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_createroomrequest",
+      "target": "models_room_conferenceroombooking_models_createroomrequest_serviceids",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1833,8 +2674,8 @@
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "models_room_conferenceroombooking_models_booking_roomid",
+      "source": "models_room_conferenceroombooking_models_createroomrequest",
+      "target": "models_room_conferenceroombooking_models_createroomrequest_hourlyrate",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1845,51 +2686,51 @@
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "models_room_conferenceroombooking_models_booking_startat",
+      "source": "models_room_conferenceroombooking_models_editroomrequest",
+      "target": "models_room_conferenceroombooking_models_editroomrequest_name",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L17",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "models_room_conferenceroombooking_models_booking_endat",
+      "source": "models_room_conferenceroombooking_models_editroomrequest",
+      "target": "models_room_conferenceroombooking_models_editroomrequest_capacity",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L18",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_booking",
-      "target": "models_room_conferenceroombooking_models_booking_totalprice",
+      "source": "models_room_conferenceroombooking_models_editroomrequest",
+      "target": "models_room_conferenceroombooking_models_editroomrequest_serviceids",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L19",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_room",
-      "target": "models_room_conferenceroombooking_models_room_bookings",
+      "source": "models_room_conferenceroombooking_models_editroomrequest",
+      "target": "models_room_conferenceroombooking_models_editroomrequest_hourlyrate",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L10",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -1930,7 +2771,7 @@
     },
     {
       "source": "models_room_conferenceroombooking_models_room",
-      "target": "models_room_conferenceroombooking_models_room_options",
+      "target": "models_room_conferenceroombooking_models_room_hourlyrate",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -1941,34 +2782,55 @@
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_room",
-      "target": "models_room_conferenceroombooking_models_room_value",
+      "source": "models_room_conferenceroombooking_models_roomreport",
+      "target": "models_room_conferenceroombooking_models_roomreport_roomid",
       "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L9",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
-      "source": "models_room_conferenceroombooking_models_room",
-      "target": "models_room_conferenceroombooking_models_booking",
-      "relation": "references",
+      "source": "models_room_conferenceroombooking_models_roomreport",
+      "target": "models_room_conferenceroombooking_models_roomreport_roomname",
+      "relation": "defines",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "context": "generic_arg",
-      "metadata": {
-        "ref_token": "Booking"
-      },
+      "context": "field",
       "source_file": "Models/Room.cs",
-      "source_location": "L10",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
-      "source": "methods",
+      "source": "models_room_conferenceroombooking_models_roomreport",
+      "target": "models_room_conferenceroombooking_models_roomreport_bookingcount",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room_conferenceroombooking_models_roomreport",
+      "target": "models_room_conferenceroombooking_models_roomreport_revenue",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "field",
+      "source_file": "Models/Room.cs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "program",
       "target": "csharp_namespace:f67fe95ea46711f0",
       "relation": "imports",
       "_origin": "ast",
@@ -1980,38 +2842,235 @@
         "target_fqn": "ConferenceRoomBooking.Models",
         "scope_kind": "file"
       },
-      "source_file": "Methods.cs",
-      "source_location": "L2",
+      "source_file": "Program.cs",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods_findemptyrooms",
-      "target": "timeonly",
+      "source": "services_methods",
+      "target": "csharp_namespace:f67fe95ea46711f0",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "namespace",
+        "target_fqn": "ConferenceRoomBooking.Models",
+        "scope_kind": "file"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_calculateroomprice",
+      "target": "services_methods_cs_datetimeoffset",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "parameter_type",
       "metadata": {
-        "ref_token": "TimeOnly"
+        "ref_token": "DateTimeOffset"
       },
-      "source_file": "Methods.cs",
-      "source_location": "L31",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L340",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods_reserveroom",
-      "target": "timeonly",
+      "source": "services_methods_methods_checkavailability",
+      "target": "services_methods_cs_datetimeoffset",
       "relation": "references",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "parameter_type",
       "metadata": {
-        "ref_token": "TimeOnly"
+        "ref_token": "DateTimeOffset"
       },
-      "source_file": "Methods.cs",
-      "source_location": "L37",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_findemptyrooms",
+      "target": "services_methods_cs_datetimeoffset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "DateTimeOffset"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L112",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_getroomreport",
+      "target": "services_methods_cs_datetimeoffset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "DateTimeOffset"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_reserveroom",
+      "target": "services_methods_cs_datetimeoffset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "DateTimeOffset"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L156",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_todatabasetime",
+      "target": "services_methods_cs_datetimeoffset",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "DateTimeOffset"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L367",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_addroomservices",
+      "target": "sqliteconnection",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteConnection"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_checkavailability",
+      "target": "sqliteconnection",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteConnection"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_gethourlyrate",
+      "target": "sqliteconnection",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteConnection"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L279",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_getserviceprice",
+      "target": "sqliteconnection",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteConnection"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_addroomservices",
+      "target": "sqlitetransaction",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteTransaction"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_checkavailability",
+      "target": "sqlitetransaction",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteTransaction"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_gethourlyrate",
+      "target": "sqlitetransaction",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteTransaction"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L279",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods_getserviceprice",
+      "target": "sqlitetransaction",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "SqliteTransaction"
+      },
+      "source_file": "Services/Methods.cs",
+      "source_location": "L295",
       "weight": 1.0
     },
     {
@@ -2202,17 +3261,6 @@
       "weight": 1.0
     },
     {
-      "source": "methods",
-      "target": "methods_meethods",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
       "source": "models_room",
       "target": "csharp_namespace:f67fe95ea46711f0",
       "relation": "contains",
@@ -2225,13 +3273,35 @@
     },
     {
       "source": "models_room",
-      "target": "models_room_conferenceroombooking_models_booking",
+      "target": "models_room_conferenceroombooking_models_createroomrequest",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "Models/Room.cs",
-      "source_location": "L13",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room",
+      "target": "models_room_conferenceroombooking_models_editroomrequest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Models/Room.cs",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room",
+      "target": "models_room_conferenceroombooking_models_createbookingrequest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Models/Room.cs",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -2243,6 +3313,28 @@
       "confidence_score": 1.0,
       "source_file": "Models/Room.cs",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room",
+      "target": "models_room_conferenceroombooking_models_bookingresult",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Models/Room.cs",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "models_room",
+      "target": "models_room_conferenceroombooking_models_roomreport",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Models/Room.cs",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
@@ -2422,6 +3514,61 @@
       "weight": 1.0
     },
     {
+      "source": "readme",
+      "target": "readme_conference_room_booking",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_conference_room_booking",
+      "target": "readme_api",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_conference_room_booking",
+      "target": "readme_price_calculation",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_conference_room_booking",
+      "target": "readme_run",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods",
+      "target": "services_methods_methods",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "conferenceroombooking",
       "target": "nuget_microsoft_aspnetcore_openapi",
       "relation": "imports",
@@ -2462,58 +3609,146 @@
       "weight": 1.0
     },
     {
-      "source": "methods_meethods",
-      "target": "methods_meethods_editrooms",
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_deleteroom",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L16",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L102",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods",
-      "target": "methods_meethods_removeroom",
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_findemptyrooms",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L26",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods",
-      "target": "methods_meethods_findemptyrooms",
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_reserveroom",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L31",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L156",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods",
-      "target": "methods_meethods_reserveroom",
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_addroom",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L37",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
-      "source": "methods_meethods",
-      "target": "methods_meethods_roomadd",
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_getroomreport",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "Methods.cs",
-      "source_location": "L8",
+      "source_file": "Services/Methods.cs",
+      "source_location": "L224",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_addroomservices",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L262",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_gethourlyrate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L279",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_getserviceprice",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_checkavailability",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L318",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_calculateroomprice",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L340",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_todatabasetime",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L367",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_editroom",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "services_methods_methods",
+      "target": "services_methods_methods_openconnection",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Services/Methods.cs",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -3074,5 +4309,6 @@
       "confidence_score": 0.85,
       "source_file": ".claude/skills/graphify/references/update.md"
     }
-  ]
+  ],
+  "built_at_commit": "64eae63dd42b5e57e1305eaac6bc59ec55b8f60a"
 }

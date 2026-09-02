@@ -1,49 +1,72 @@
 PRAGMA foreign_keys = ON;
 
-
-CREATE TABLE IF NOT EXISTS Rooms ( 
+CREATE TABLE IF NOT EXISTS Rooms (
     Id INTEGER PRIMARY KEY AUTOINCREMENT,
     Name TEXT NOT NULL,
     Capacity INTEGER NOT NULL CHECK (Capacity > 0),
     HourlyRate INTEGER NOT NULL CHECK (HourlyRate >= 0)
 );
 
-CREATE TABLE IF NOT EXISTS Services ( 
-    Id integer Primary key Autoincrement,
-    name string not null Unique, 
-    Price int not null check (Price >  0)
+CREATE TABLE IF NOT EXISTS Services (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL UNIQUE,
+    Price INTEGER NOT NULL CHECK (Price > 0)
 );
 
-Create table if not Exists RoomServices (
-    RoomID integer not null, 
-    ServiceId integer not null, 
-
+CREATE TABLE IF NOT EXISTS RoomServices (
+    RoomId INTEGER NOT NULL,
+    ServiceId INTEGER NOT NULL,
     PRIMARY KEY (RoomId, ServiceId),
-
-    FOREIGN KEY (Roomid) 
-    References Rooms(Id)
-    on delete cascade, 
-
-    FOREIGN KEY (ServiceId)
-    References  Services(Id)
-    On Delete Cascade
+    FOREIGN KEY (RoomId) REFERENCES Rooms(Id) ON DELETE CASCADE,
+    FOREIGN KEY (ServiceId) REFERENCES Services(Id) ON DELETE CASCADE
 );
 
-Create Table if not exists Bookings ( 
-    Id Integer Primary Key Autoincrement, 
-    RoomId integer not null, 
-    StartAt text not null, 
-    EndAt text not null, 
-    TotalPrice integer not null, 
-    FOREIGN KEY (RoomId) REFERENCES Rooms (Id)
+CREATE TABLE IF NOT EXISTS Bookings (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    RoomId INTEGER NOT NULL,
+    StartAt TEXT NOT NULL,
+    EndAt TEXT NOT NULL,
+    TotalPrice INTEGER NOT NULL CHECK (TotalPrice >= 0),
+    FOREIGN KEY (RoomId) REFERENCES Rooms(Id) ON DELETE CASCADE
 );
 
-Create table if not exists BookingServices (
-    BookingId integer not null, 
-    ServiceId integer not null,
+CREATE INDEX IF NOT EXISTS IX_Bookings_RoomId_StartAt_EndAt
+ON Bookings (RoomId, StartAt, EndAt);
 
-    primary key (BookingId, ServiceId), 
+CREATE TABLE IF NOT EXISTS BookingServices (
+    BookingId INTEGER NOT NULL,
+    ServiceId INTEGER NOT NULL,
+    PRIMARY KEY (BookingId, ServiceId),
+    FOREIGN KEY (BookingId) REFERENCES Bookings(Id) ON DELETE CASCADE,
+    FOREIGN KEY (ServiceId) REFERENCES Services(Id) ON DELETE CASCADE
+);
 
-    Foreign key (BookingId) references Bookings(Id) on delete cascade,
-    Foreign key (ServiceId) references Services(Id) on delete cascade
-)
+INSERT INTO Services (Name, Price)
+SELECT 'Projector', 500
+WHERE NOT EXISTS (SELECT 1 FROM Services WHERE Name = 'Projector');
+
+INSERT INTO Services (Name, Price)
+SELECT 'Wi-Fi', 300
+WHERE NOT EXISTS (SELECT 1 FROM Services WHERE Name = 'Wi-Fi');
+
+INSERT INTO Services (Name, Price)
+SELECT 'Sound', 700
+WHERE NOT EXISTS (SELECT 1 FROM Services WHERE Name = 'Sound');
+
+INSERT INTO Rooms (Name, Capacity, HourlyRate)
+SELECT 'Hall A', 50, 2000
+WHERE NOT EXISTS (SELECT 1 FROM Rooms WHERE Name = 'Hall A');
+
+INSERT INTO Rooms (Name, Capacity, HourlyRate)
+SELECT 'Hall B', 100, 3500
+WHERE NOT EXISTS (SELECT 1 FROM Rooms WHERE Name = 'Hall B');
+
+INSERT INTO Rooms (Name, Capacity, HourlyRate)
+SELECT 'Hall C', 30, 1500
+WHERE NOT EXISTS (SELECT 1 FROM Rooms WHERE Name = 'Hall C');
+
+INSERT OR IGNORE INTO RoomServices (RoomId, ServiceId)
+SELECT room.Id, service.Id
+FROM Rooms as room
+CROSS JOIN Services as service
+WHERE room.Name IN ('Hall A', 'Hall B', 'Hall C');

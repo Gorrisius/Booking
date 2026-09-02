@@ -1,6 +1,16 @@
 @ConferenceRoomBooking_HostAddress = http://localhost:5106
 
-GET {{ConferenceRoomBooking_HostAddress}}/weatherforecast/
+GET {{ConferenceRoomBooking_HostAddress}}/rooms/available?startAt=2026-09-03T10:00:00%2B02:00&duration=4&capacity=50
 Accept: application/json
 
 ###
+
+POST {{ConferenceRoomBooking_HostAddress}}/bookings
+Content-Type: application/json
+
+{
+  "roomId": 1,
+  "startAt": "2026-09-03T10:00:00+02:00",
+  "duration": 4,
+  "serviceIds": [1, 2]
+}
