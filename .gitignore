@@ -52,6 +52,11 @@ secrets.json
 .agents/
 .toml
 graphify-out/
+AGENTS.md
+CLAUDE.md
+
+# Local assignment document
+/BackendTZ.pdf
 
 # Logs, temporary files, and OS metadata
 *.log
