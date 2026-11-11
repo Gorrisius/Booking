@@ -1,0 +1,67 @@
+# .NET build and publish output
+[Bb]in/
+[Oo]bj/
+artifacts/
+publish/
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.nupkg
+*.snupkg
+
+# IDE and user-specific settings
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+*.userosscache
+*.sln.ide
+
+# Local databases and their journals (keep Data/booking.sql)
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Environment overrides, credentials, and private keys
+.env
+.env.*
+!.env.example
+!.env.sample
+appsettings.Local.json
+appsettings.*.Local.json
+appsettings.Production.json
+secrets.json
+**/secrets/
+*.pfx
+*.p12
+*.pem
+*.key
+*.pubxml.user
+.aws/
+.azure/
+
+# Local agent configuration and generated knowledge graphs
+.codex/
+.claude/
+.agents/
+.toml
+graphify-out/
+
+# Logs, temporary files, and OS metadata
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
